@@ -1,16 +1,29 @@
 # Linear Regression
 
-Here I will implement linear regression with one variable to predict profits for a restaurant franchise.
+Suppose you are the CEO of a restaurant franchise and are considering different cities for opening a new outlet. You would like to expand your business to cities that are likely to generate higher profits.
 
-Suppose you are the CEO of a restaurant franchise and are considering different cities for opening a new outlet.
+The franchise already has restaurants in various cities, and you have data on profits and city populations.
 
-You would like to expand your business to cities that may give your restaurant higher profits.
- - The chain already has restaurants in various cities and you have data for profits and populations from the cities.
- - You also have data on cities that are candidates for a new restaurant.
-   - For these cities, you have the city population.
+You also have information on candidate cities for new locations. For these cities, only the population is known.
 
-You can use the data to help you identify which cities may potentially give your business higher profits.
+Using this data, you can build a linear regression model to help identify which cities may potentially yield higher profits.
 
-As a result you will get a scatter plot of actual profits vs. city populations with a linear regression line showing the predicted values : 
+## Results
+
+After training the model, we visualize the results with a scatter plot of actual profits vs. city populations, along with the regression line showing the predicted values:
 
 <img width="408" height="284" alt="Screenshot 2025-07-15 at 14 32 35" src="https://github.com/user-attachments/assets/d6b858a1-88a9-477b-b54e-a5359e026cb8" />
+
+The learned parameters (w, b) can now be used to make predictions on profits for new cities.
+
+### Example Predictions
+
+The model expects input in terms of population (in 10,000s). For example:
+
+Population = 35,000
+Input to model: np.array([3.5])
+Predicted profit: $4,519.77
+
+Population = 70,000
+Input to model: np.array([7.0])
+Predicted profit: $45,342.45
