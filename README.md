@@ -12,7 +12,11 @@ Using this data, you can build a linear regression model to help identify which 
 
 After training the model, we visualize the results with a scatter plot of actual profits vs. city populations, along with the regression line showing the predicted values:
 
+
+
 <img width="408" height="284" alt="Screenshot 2025-07-15 at 14 32 35" src="https://github.com/user-attachments/assets/d6b858a1-88a9-477b-b54e-a5359e026cb8" />
+
+
 
 The learned parameters (w, b) can now be used to make predictions on profits for new cities.
 
